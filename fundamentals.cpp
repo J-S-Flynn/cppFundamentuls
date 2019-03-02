@@ -57,7 +57,8 @@ void specificHello(string name){
     cout << "Thanks " + name + " for all the things you have done" << endl ; 
 }
 
-
+//switch statments in c++ are a little difrent from C, C#, JAVA, GoLang etc. they cannot directly evaluate on strings. it requires a bit of work around to get 
+//string evaluations to work. 
 string switchName(int num){
 
     switch (num){
