@@ -8,6 +8,7 @@ using namespace std;
 void message() ; // declared before main so it can be used 
 void ifStatment(int) ; // declared before main with input types 
 void specificHello(string) ;
+string switchName(int) ; 
 
 //we have two functions , message and getNumber , one is defined befor main, and the other after. 
 // both can be called in main. the reason this is the cas eis that getNumber is declared and defined before main. message is declared befor, but dfined after. 
@@ -25,7 +26,7 @@ int main(){
 
     ifStatment(getNumber(5, 2)) ;  //using the output of one function to pass value to another function 
     
-    specificHello("ThoXIII") ; 
+    specificHello(switchName(3)) ; 
 
     return 0 ; 
 }
@@ -54,4 +55,23 @@ void ifStatment(int num){
 void specificHello(string name){
 
     cout << "Thanks " + name + " for all the things you have done" << endl ; 
+}
+
+
+string switchName(int num){
+
+    switch (num){
+        case 1 : 
+            return "Nancy" ;
+            break;
+        case 2 : 
+            return "Ben" ; 
+            break;
+        case 3 :
+            return "TheoXIII" ; 
+            break ; 
+        default:
+            return "No Name Present !" ; 
+            break;
+    }
 }
