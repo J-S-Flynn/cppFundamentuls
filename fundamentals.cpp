@@ -6,8 +6,9 @@
 using namespace std; 
 
 void message() ; 
-//compleatly forgot, code compilation is not like java. the function must be defined befor it can be called
-//i.e if you make a function below main and try to call it, main will not lie it.   
+
+//we have two functions , message and getNumber , one is defined befor main, and the other after. 
+// both can be called in main. the reason this is the cas eis that getNumber is declared and defined before main. message is declared befor, but dfined after. 
 int getNumber(int baseNumber, int multiplyer){
 
         int sum = baseNumber * multiplyer ; 
